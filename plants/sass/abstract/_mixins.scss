@@ -1,0 +1,38 @@
+@mixin font ($size, $height, $weight){
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight; 
+}
+
+@mixin flexcont ($direction:row, $justify:center,  $align:center, $wrap:wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+ @mixin madia-laptop {
+     @media (max-width: 1220px) { @content;}
+ }
+// @mixin madia-tablet {
+//     @media (max-width: $tablet-width) { @content;}
+// }
+// @mixin madia-mobile {
+//     @media (max-width: $mobile-width) { @content;}
+// }
+// @mixin madia-mobile-min {
+//     @media (max-width: $mobile-min-width) { @content;}
+// }
+
+@mixin madia-tablet {
+    @media (max-width: $tablet-width) { @content;}
+}
+@mixin madia-mobile-middle {
+    @media (max-width: 634px) { @content;}
+}
+@mixin madia-mobile {
+    @media (max-width: $mobile-width) { @content;}
+}
+@mixin madia-mobile-min {
+    @media (max-width: $mobile-min-width) { @content;}
+}

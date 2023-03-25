@@ -1,0 +1,21 @@
+@import "abstract/mixins";
+@import "abstract/constants";
+@import "abstract/plaseholders";
+
+@import "base/base";
+@import "base/buttoms";
+@import "base/burger";
+
+//layouts
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/footer";
+
+
+//Components
+@import "components/contactus";
+@import "components/navigation";
+@import "components/welcome";
+@import "components/about";
+@import "components/service";
+@import "components/prices";
